@@ -1,0 +1,14 @@
+.paralax-container {
+    height:300px;
+}
+
+.footer-row {
+    margin-bottom:0;
+}
+
+.footer {
+    height:80px;
+    background-color:rgb(28, 28, 28);
+    margin: 0;
+    color:white;
+}
