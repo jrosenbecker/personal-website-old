@@ -1,0 +1,33 @@
+nav {
+    background:rgba(0,0,0,0.2);
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("/assets/devils-lake.jpg");
+    background-color: rgba(20, 100, 40, .5);
+    background-blend-mode: multiply;
+    /* Full height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    height:436px;
+    color: whitesmoke;
+}
+
+.logo {
+    font-family: Roboto;
+    font-weight: 200;
+    font-size: 48pt;
+}
+
+.tagline {
+    font-size: 16pt;
+}

@@ -19,7 +19,7 @@ const server = inversifyServer.build();
 
 // Serve static resources at the root route
 server.use(express.static(path.join(__dirname, '..', 'dist', 'web-app')));
-server.use('/ckeditor', express.static(path.join(__dirname, 'ckeditor')));
+server.use('/assets', express.static(path.join(__dirname, '..', 'dist', 'assets')));
 server.use('/*', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'dist', 'web-app', 'index.html'));
 });
