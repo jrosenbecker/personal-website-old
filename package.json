@@ -1,0 +1,36 @@
+{
+  "name": "express-typescript-template",
+  "version": "0.1.0",
+  "description": "A generator for building an express server using typescript",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "watch": "concurrently --kill-others \"npm run watch:server\" \"npm run watch:client\"",
+    "watch:client": "cd src/web-app && npm run watch",
+    "watch:server": "nodemon --config nodemonconfig.json",
+    "build": "npm run build:server && npm run build:client",
+    "build:client": "cd src/web-app && npm run build",
+    "build:server": "tsc",
+    "postinstall": "cd src/web-app && npm install",
+    "debug": "npm run watch --inspect",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.11.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "inversify": "^4.11.1",
+    "inversify-express-utils": "^5.2.1",
+    "path": "^0.12.7",
+    "reflect-metadata": "^0.1.12"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "nodemon": "^1.17.1",
+    "ts-node": "^5.0.1",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.2"
+  }
+}
