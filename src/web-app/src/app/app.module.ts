@@ -10,6 +10,7 @@ import { BlogComponent } from './main-content/blog/blog.component';
 import { MainContentComponent } from './main-content/maincontent.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactComponent } from './main-content/contact/contact.component';
+import { SocialIconComponent } from './footer/social-icon/socialicon.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ContactComponent } from './main-content/contact/contact.component';
     MainContentComponent,
     AboutComponent,
     BlogComponent,
-    ContactComponent
+    ContactComponent,
+    SocialIconComponent
   ],
   imports: [
     AppRoutingModule,
