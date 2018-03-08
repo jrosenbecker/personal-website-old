@@ -17,7 +17,20 @@ body {
 .paralax-lake { 
     /* The image used */
     background-image: url("/assets/devils-lake.jpg");
-    background-color: rgba(20, 100, 40, .5);
+    background-color: rgba(20, 100, 40, .7);
+    background-blend-mode: multiply;
+    /* Full height */
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.paralax-mixer {
+    background-image: url("/assets/mixer.jpg");
+    background-color: rgba(20, 100, 40, .7);
     background-blend-mode: multiply;
     /* Full height */
 
