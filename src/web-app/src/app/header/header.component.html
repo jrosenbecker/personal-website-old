@@ -6,6 +6,8 @@
                     <li><a href="/">About</a></li>
                     <li><a href="/blog">Blog</a></li>
                     <li><a href="/contact">Contact Me</a></li>
+                    <li><a href="/edit" *ngIf="_authService.isAuthenticated()">Edit</a></li>
+                    <li><a href="/logout" *ngIf="_authService.isAuthenticated()">Logout</a></li>
                 </ul>
             </div>
         </nav>
